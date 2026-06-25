@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerLose
+  m_Name: DemonLose
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 7418679012873004601, guid: 87bb48d17cb47dc4fa086cf3ed2c2733, type: 3}
+      value: {fileID: 7947455274595291100, guid: 8fb76e525f9c8434b93d1badcd30a68a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 7418679012873004601, guid: 87bb48d17cb47dc4fa086cf3ed2c2733, type: 3}
+    - {fileID: 7947455274595291100, guid: 8fb76e525f9c8434b93d1badcd30a68a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
