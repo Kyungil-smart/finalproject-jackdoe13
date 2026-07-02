@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 178839084}
   - component: {fileID: 178839083}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: MoveTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,6 +157,52 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178839082}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.63165, y: 0.13861, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &860474066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 860474068}
+  - component: {fileID: 860474067}
+  m_Layer: 0
+  m_Name: MoveTest2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &860474067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860474066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a32a09b31adb7f46882a1f4737d12c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TestMove
+  player: {fileID: 1567171548}
+  target: {fileID: 2109434804}
+--- !u!4 &860474068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860474066}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.63165, y: 0.13861, z: 0}
@@ -252,7 +298,7 @@ Transform:
   m_GameObject: {fileID: 1554775702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.26, y: -1.43, z: 0}
+  m_LocalPosition: {x: -2.96, y: 1.5, z: 0}
   m_LocalScale: {x: 0.21113977, y: 0.21113977, z: 0.21113977}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -306,6 +352,7 @@ GameObject:
   - component: {fileID: 1567171546}
   - component: {fileID: 1567171545}
   - component: {fileID: 1567171544}
+  - component: {fileID: 1567171548}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Untagged
@@ -403,12 +450,27 @@ Transform:
   m_GameObject: {fileID: 1567171543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3, y: -0.2, z: 0}
+  m_LocalPosition: {x: -5.24, y: -1.44, z: 0}
   m_LocalScale: {x: 0.22163212, y: 0.22163212, z: 0.22163212}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1567171548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567171543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be723e52994570468de24dd2f3c2156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  playerSprite: {fileID: 0}
+  animator: {fileID: 0}
+  moveSpeed: 5
 --- !u!1 &1666431882
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,9 +1013,10 @@ SceneRoots:
   m_Roots:
   - {fileID: 1770939746}
   - {fileID: 1554775705}
+  - {fileID: 1567171546}
   - {fileID: 1666431883}
   - {fileID: 2073818424}
-  - {fileID: 1567171546}
   - {fileID: 2109434804}
   - {fileID: 1904840495}
   - {fileID: 178839084}
+  - {fileID: 860474068}
