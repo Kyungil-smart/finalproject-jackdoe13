@@ -754,7 +754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4789752790949615585}
   m_Layer: 0
-  m_Name: OptionUI
+  m_Name: SettingUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
